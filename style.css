@@ -1,0 +1,139 @@
+@import url("Norse-Bold.otf");
+
+:root {
+	height: 100%;
+	width: 100%;
+	--scrim-color: 0, 0, 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: inherit;
+	width: inherit;
+	display: flex;
+	flex-direction: row;
+}
+
+.side-pane {
+	height: inherit;
+	width: auto;
+	aspect-ratio: 3/4;
+	background-image: url("background.jpeg");
+	background-size: cover;
+	object-fit: contain;
+}
+
+.scrim {
+	padding: 12px;
+	position: relative;
+	top: 25%;
+	background-color: rgba(var(--scrim-color), 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	flex-direction: row;
+}
+
+.logo {
+	height: 100px;
+	width: auto;
+}
+
+.title {
+	color: white;
+	font-family: "Norse Bold", "JetBrains Mono", monospace;
+	font-size: 80px;
+
+}
+
+
+.content {
+	height: inherit;
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	background: #F9FAFB;
+}
+
+.form-container {
+	width: inherit;
+	background: white;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 12px 12px;
+
+}
+
+#main-form {
+	width: fit-content;
+	padding: 2% 6%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+
+form label, input {
+	display: block;
+}
+
+form label {
+	font-family: "Noto Sans Carian", system-ui;
+	text-transform: uppercase;
+}
+
+form input {
+	border: #E5E7EB solid 1px;
+	border-radius: 6px;
+	padding: 4px;
+}
+
+form span {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+form div {
+	display: flex;
+	gap: 18px;
+}
+
+input:focus {
+	border: none;
+	outline: cornflowerblue 2px solid;
+	box-shadow: 0 0 10px;
+}
+
+#submit-button {
+	background: #596D48;
+	border-radius: 6px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: large;
+	padding: 10px 36px;
+	margin: 36px 0 0 36px;
+	align-self: start;
+}
+
+#submit-button + p {
+	align-self: start;
+	margin: 26px 0 0 36px;
+	font-weight: normal;
+}
+
+a:link {
+	color: #596D48;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+a:visited {
+	color: #596D48;
+	text-decoration: none;
+}

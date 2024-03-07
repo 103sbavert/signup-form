@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		  name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Sign-up form</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="side-pane">
+	<div class="scrim">
+		<img alt="Odin logo" class="logo" src="odin-lined.png">
+		<h1 class="title">Odin</h1>
+	</div>
+</div>
+<div class="content">
+	<p class="heading-text">
+	<h2>
+	This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.
+	<br><br>
+	You know you want to
+	</h2>
+	</p>
+
+	<div class="form-container">
+		<form id="main-form">
+			<h2>Let's do this</h2>
+			<div>
+				<span>
+				<label for="first-name">First name</label>
+				<input id="first-name" required type="text">
+				</span>
+				<span>
+				<label for="last-name">Last name</label>
+				<input id="last-name" required type="text">
+				</span>
+			</div>
+			<div>
+				<span>
+				<label for="email">Email</label>
+				<input id="email" required type="email">
+				</span>
+				<span>
+				<label for="phone-number">Phone number</label>
+				<input id="phone-number" required type="tel">
+				</span>
+			</div>
+			<div>
+				<span>
+				<label for="password">Password</label>
+				<input id="password" required type="password">
+				</span>
+				<span>
+				<label for="confirm-password">Confirm password</label>
+				<input id="confirm-password" required type="password">
+					</span>
+			</div>
+		</form>
+	</div>
+	<button form="main-form" id="submit-button" type="button">Create Account</button>
+	<p>Already have an account? <a href="">Log In</a></p>
+</div>
+</body>
+</html>
